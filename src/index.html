@@ -3,32 +3,32 @@
   <head>
     <meta charset="utf-8">
     <title>Josh's Markov Model</title>
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
     <link rel="stylesheet" href="style.css" media="screen" title="no title">
   </head>
   <body>
-    <h1>Engineering Challenge</h1>
 
-    <h3>sdfsdfsd</h3>
-    <div>
-      <p id="top-three-words">
+    <div class="container">
+      <h1>Specific Assembly Code Challenge</h1>
 
-      </p>
+      <h3>Paste in a text file below and the top three words will be displayed</h3>
+
+      <textarea id="text-input" autofocus></textarea>
+      <br />
+      <button id="text-input-button" class="button" type="button">Submit</button>
+
+      <div id="text-options" class="hidden">
+        <p id="top-three-words"></p>
+        <h3>Type in a word and I'll show you what words come after that word</h3>
+        <input id="word-select" class="word-input" type="text" />
+        <br />
+        <button id="word-input-button" class="button" type="button">Submit</button>
+      </div>
+      <div id="word-options" class="hidden">
+        <h4>words that appear after this word:</h4>
+        <div id="next-word-options"></div>
+      </div>
     </div>
-
-
-<br /><br/>
-
-</br/>
-<h4>Type in a word and I'll show you what words come after that word</h4>
-    <input id="word-select" type="text" />
-    <button id="button" type="button">Submit</button>
-
-
-  <h4>words that appear after this word:</h4>
-
-  <div id="next-word-options">
-
-  </div>
 
   <script src="scripts.js" charset="utf-8"></script>
   </body>
